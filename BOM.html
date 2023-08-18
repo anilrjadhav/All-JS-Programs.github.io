@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+
+</head>
+<body>
+
+    <h1> Browser Object Model</h1>
+
+    <div id="result"></div>
+
+    <button onclick="gotogoogle"> go to Google</button>
+
+    <script>
+
+        //document.getElementById('result').innerHTML=window.innerWidth
+        //document.getElementById('result').innerHTML=window.innerheight
+
+        //document.getElementById('result').innerHTML=window.screen.colorDepth
+        //document.getElementById('result').innerHTML=window.screen.height
+        //document.getElementById('result').innerHTML=window.screen.width
+        //document.getElementById('result').innerHTML=window.screen.pixelDepth
+        
+
+        // For Current Location 
+        //document.getElementById('result').innerHTML=window.location 
+        //document.getElementById('result').innerHTML=window.location.pathname
+
+        // For Assign Loaction
+        document.getElementById('result').innerHTML=window.location.protocol
+
+        function gotogoogle()
+        {
+
+            window.location.assign('https://www.google.com')
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

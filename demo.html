@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="my-node">
+        <p>Some HTML content or images.</p>
+    </div>
+
+    <script>
+        var node = document.getElementById('my-node');
+
+        domtoimage.toPng(node).then(function (dataUrl) {
+            var img = new Image();
+            img.src = dataUrl;
+            document.body.appendChild(img);
+        }).catch(function (error) {
+            console.error('oops, something went wrong!', error);
+        });
+    </script>
+
+
+</body>
+
+</html>
